@@ -1,0 +1,190 @@
+/* ==========================
+   VARIÁVEIS DE CORES
+========================== */
+:root {
+  --laranja: #FF7F50;
+  --marrom: #8B4513;
+  --bege: #F5F5DC;
+  --texto: #333333;
+  --verde: #4CAF50;
+  --cinza-claro: #f0f0f0;
+}
+
+/* ==========================
+   RESET BÁSICO
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ==========================
+   BODY
+========================== */
+body {
+  background-color: var(--bege);
+  color: var(--texto);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ==========================
+   HEADER
+========================== */
+header {
+  background-color: var(--marrom);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: var(--laranja);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+header nav button:hover {
+  background-color: #e36b30;
+  transform: scale(1.05);
+}
+
+/* ==========================
+   MAIN
+========================== */
+main {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==========================
+   TÍTULOS E PARÁGRAFOS
+========================== */
+h2 {
+  color: var(--marrom);
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* ==========================
+   IMAGENS
+========================== */
+img {
+  border-radius: 10px;
+  margin-top: 15px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  background-color: var(--cinza-claro);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--laranja);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e36b30;
+  transform: scale(1.05);
+}
+
+/* ==========================
+   ALERTAS
+========================== */
+#msg {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* ==========================
+   LISTAS DE PROJETOS
+========================== */
+ul {
+  list-style-type: none;
+  width: 100%;
+  max-width: 500px;
+}
+
+ul li {
+  background-color: var(--laranja);
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #e36b30;
+  transform: scale(1.02);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  background-color: var(--marrom);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
