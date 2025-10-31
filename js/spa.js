@@ -1,7 +1,5 @@
-// Seleciona o container principal
 const app = document.getElementById("app");
 
-// Templates das páginas
 const pages = {
   home: `
     <h2>Bem-vindo à ONG Animais Feliz</h2>
@@ -44,7 +42,6 @@ const pages = {
   `
 };
 
-// Função para trocar páginas
 function navigate(page) {
   app.innerHTML = pages[page];
 
@@ -81,5 +78,4 @@ function navigate(page) {
   }
 }
 
-// Carrega página inicial ao abrir o site
 navigate("home");
